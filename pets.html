@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pets</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="tela logado">
+        <section class="navbar">
+          <h1 class="logo">Hotel Pet</h1>
+          <nav class="nav-menu">
+            <a href="" class="opcao ativo">
+              <img src="img/pet.svg" alt="Icone Pet" />
+              <span>Pets</span>
+            </a>
+            <a href="" class="opcao">
+              <img src="img/user.svg" alt="Icone Usuario" />
+              <span>Usuários</span>
+            </a>
+            <a href="" class="opcao">
+              <img src="img/settings.svg" alt="Icone Configurações" />
+              <span>Configurações</span>
+            </a>
+            <a href="" class="opcao">
+              <img src="img/book-open.svg" alt="Icone Reservas" />
+              <span>Reservas</span>
+            </a>
+          </nav>
+        </section>
+
+        <section class="principal">
+          <div class="user-header">
+            <div class="user-info">
+              <img src="img/user-circle.svg" alt="Foto do Perfil" />
+              <span>João da Silva</span>
+            </div>
+          </div>
+
+          <div class="conteudo-pagina">
+            <div class="breadcrumb">Home / Pets</div>
+
+            <div class="wrapper-principal">
+              <div class="header-pets">
+                <h1>Pets</h1>
+                <a href="" class="btn-novo-pet"> <span>+</span> Novo Pet</a>
+              </div>
+
+              <div class="wrapper-form">
+                <form action="" method="get">
+                  <div class="grid-form">
+                    <div class="campo-input">
+                      <label for="id">ID</label>
+                      <input
+                        type="number"
+                        name="id"
+                        id="id"
+                        placeholder="ID do PET"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="raca">Raça</label>
+                      <input
+                        type="text"
+                        name="raca"
+                        id="raca"
+                        placeholder="Raça do PET"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="nome">Nome</label>
+                      <input
+                        type="text"
+                        name="nome"
+                        id="nome"
+                        placeholder="Nome do PET"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="nome">Tamanho</label>
+                      <input
+                        type="text"
+                        name="tamanho"
+                        id="tamanho"
+                        placeholder="Tamanho do PET"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-acoes">
+                    <button type="submit" class="btn-principal">
+                      <span class="icon">🔍</span> Pesquisar
+                    </button>
+                    <button type="reset" class="btn-secundario">
+                      <span class="icon">🔄</span> Limpar
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="wrapper-result">
+                <table class="tabela">
+                  <thead>
+                    <tr>
+                      <th class="col-check"></th>
+                      <th>Id<span>↓</span></th>
+                      <th>nome<span>↓</span></th>
+                      <th>tipo<span>↓</span></th>
+                      <th>raça<span>↓</span></th>
+                      <th>tamanho<span>↓</span></th>
+                      <th class="col-acoes"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" checked /></td>
+                      <td>12349984501</td>
+                      <td>Max</td>
+                      <td>Cachorro</td>
+                      <td>Pator Alemão</td>
+                      <td>Grande</td>
+                      <td class="acoes-links">
+                        <a href="#">Editar</a>
+                        <a href="#">Visualizar</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>12349984501</td>
+                      <td>Ginger</td>
+                      <td>Gato</td>
+                      <td>Não definida</td>
+                      <td>Pequeno</td>
+                      <td class="acoes-links">
+                        <a href="#">Editar</a>
+                        <a href="#">Visualizar</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
