@@ -361,7 +361,7 @@ a:focus {
     color: #555;
 }
 
-.wrapper-form .campo-input input {
+.wrapper-form .campo-input input, select {
     width: 100%;
     padding: 0.5rem 0.75rem;
     background-color: #fff;
