@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pets</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="tela logado">
+        <section class="navbar">
+          <h1 class="logo">Hotel Pet</h1>
+          <nav class="nav-menu">
+            <a href="pets.html" class="opcao">
+              <img src="img/pet.svg" alt="Icone Pet" />
+              <span>Pets</span>
+            </a>
+            <a href="" class="opcao ativo">
+              <img src="img/user.svg" alt="Icone Usuario" />
+              <span>Usuários</span>
+            </a>
+            <a href="" class="opcao">
+              <img src="img/settings.svg" alt="Icone Configurações" />
+              <span>Configurações</span>
+            </a>
+            <a href="" class="opcao">
+              <img src="img/book-open.svg" alt="Icone Reservas" />
+              <span>Reservas</span>
+            </a>
+          </nav>
+        </section>
+
+        <section class="principal">
+          <div class="user-header">
+            <div class="user-info">
+              <img src="img/user-circle.svg" alt="Foto do Perfil" />
+              <span>João da Silva</span>
+            </div>
+          </div>
+
+          <div class="conteudo-pagina">
+            <div class="breadcrumb">Home / Usuários</div>
+
+            <div class="wrapper-principal">
+              <div class="header-pets">
+                <h1>Usuários</h1>
+                <div style="display: flex; gap: 0.8rem; margin-top: 0.5rem">
+                  <a href="novopet.html" class="btn-novo-pet"> 👤+ novo </a>
+                  <a href="novopet.html" class="btn-novo-pet"> 👤- Remover</a>
+                  <a href="novopet.html" class="btn-novo-pet">
+                    ✔️ Mudar status</a
+                  >
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 0.8rem;
+                  margin-bottom: -0.5rem;
+                "
+              >
+                <span style="font-size: 0.95rem; color: #555"
+                  >Visualizar Por:
+                </span>
+                <button
+                  class="btn-novo-pet"
+                  style="border-color: #b388eb; color: #074ee8"
+                >
+                  Usuários
+                </button>
+                <button class="btn-novo-pet" style="background: #fff">
+                  Função
+                </button>
+              </div>
+
+              <div class="wrapper-form">
+                <form action="" method="get">
+                  <div class="grid-form">
+                    <div class="campo-input">
+                      <label for="id">ID</label>
+                      <input
+                        type="number"
+                        name="id"
+                        id="id"
+                        placeholder="ID do Usuário"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="raca">Criado em</label>
+                      <input
+                        type="month"
+                        name="mes"
+                        id="mes"
+                        placeholder="Raça do PET"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="nome">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="mail@server.com"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="nome">Nome</label>
+                      <input
+                        type="text"
+                        name="tamanho"
+                        id="tamanho"
+                        placeholder="Nome do Usuário"
+                      />
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="status">Status</label>
+                      <select name="status" id="status">
+                        <option value="" disabled selected></option>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                      </select>
+                    </div>
+
+                    <div class="campo-input">
+                      <label for="funcao">Função</label>
+                      <select name="funcao" id="funcao">
+                        <option value="" selected disabled></option>
+                        <option value="gerente">Gerente</option>
+                        <option value="funcionario">Funcionario</option>
+                        <option value="cliente">Cliente</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-acoes">
+                    <button type="submit" class="btn-principal">
+                      <span class="icon">🔍</span> Pesquisar
+                    </button>
+                    <button type="reset" class="btn-secundario">
+                      <span class="icon">🔄</span> Limpar
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="wrapper-result">
+                <table class="tabela">
+                  <thead>
+                    <tr>
+                      <th class="col-check"></th>
+                      <th>Foto<span>↓</span></th>
+                      <th>email <span>↓</span></th>
+                      <th>nome <span>↓</span></th>
+                      <th>função <span>↓</span></th>
+                      <th>status <span>↓</span></th>
+                      <th>criado em <span>↓</span></th>
+                      <th class="col-acoes"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" checked /></td>
+                      <td>
+                        <img
+                          src="img/user-circle.svg"
+                          alt="Foto do Usuário"
+                          style="width: 24px; opacity: 0.5"
+                        />
+                      </td>
+                      <td>joaodasilva@pet.com</td>
+                      <td>João da Silva</td>
+                      <td>Gerente</td>
+                      <td>
+                        <span
+                          style="
+                            border: 1px solid #2e7d32;
+                            color: #2e7d32;
+                            padding: 2px 8px;
+                            border-radius: 4px;
+                            font-size: 0.85rem;
+                          "
+                          >Ativo</span
+                        >
+                      </td>
+                      <td>19/02/2020</td>
+                      <td class="acoes-links">
+                        <a href="editar.html">Editar</a>
+                        <a href="verpet.html">Visualizar</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>
+                        <img
+                          src="img/user-circle.svg"
+                          alt="User"
+                          style="width: 24px; opacity: 0.5"
+                        />
+                      </td>
+                      <td>maria@pet.com</td>
+                      <td>Maria da Silva</td>
+                      <td>Funcionário</td>
+                      <td>
+                        <span
+                          style="
+                            border: 1px solid #c62828;
+                            color: #c62828;
+                            padding: 2px 8px;
+                            border-radius: 4px;
+                            font-size: 0.85rem;
+                          "
+                          >Inativo</span
+                        >
+                      </td>
+                      <td>19/02/2020</td>
+                      <td class="acoes-links">
+                        <a href="editarusuario.html">Editar</a>
+                        <a href="verusuario.html">Visualizar</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>
+                        <img
+                          src="img/user-circle.svg"
+                          alt="User"
+                          style="width: 24px; opacity: 0.5"
+                        />
+                      </td>
+                      <td>josedasilva@pet.com</td>
+                      <td>José da Silva</td>
+                      <td>Cliente</td>
+                      <td>
+                        <span
+                          style="
+                            border: 1px solid #2e7d32;
+                            color: #2e7d32;
+                            padding: 2px 8px;
+                            border-radius: 4px;
+                            font-size: 0.85rem;
+                          "
+                          >Ativo</span
+                        >
+                      </td>
+                      <td>19/02/2020</td>
+                      <td class="acoes-links">
+                        <a href="editarusuario.html">Editar</a>
+                        <a href="verusuario.html">Visualizar</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
