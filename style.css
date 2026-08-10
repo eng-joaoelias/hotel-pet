@@ -481,3 +481,10 @@ a:focus {
 .acoes-links a:hover {
   color: #074ee8;
 }
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
