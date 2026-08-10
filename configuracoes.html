@@ -51,14 +51,23 @@
                 <form action="" method="post">
                   <div class="flex-form">
                     <div
-                      style="display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 400px;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        width: 100%;
+                        max-width: 400px;
+                      "
                     >
                       <div class="campo-input">
                         <label for="valor-diaria">Valor da Diária *</label>
                         <input
-                          type="valor-diaria"
+                          type="number"
                           id="valor-diaria"
                           name="valor-diaria"
+                          placeholder="10.00"
+                          min="0.01"
+                          step="0.01"
                           required
                         />
                       </div>
@@ -69,6 +78,9 @@
                           type="number"
                           id="qtd-vagas"
                           name="qtd-vagas"
+                          placeholder="3"
+                          min="1"
+                          step="1"
                           required
                         />
                       </div>
