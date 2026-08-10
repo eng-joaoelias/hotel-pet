@@ -20,7 +20,7 @@
               <img src="img/user.svg" alt="Icone Usuario" />
               <span>Usuários</span>
             </a>
-            <a href="#" class="opcao ativo">
+            <a href="configuracoes.html" class="opcao ativo">
               <img src="img/settings.svg" alt="Icone Configurações" />
               <span>Configurações</span>
             </a>
@@ -48,58 +48,41 @@
               </div>
 
               <div class="wrapper-form">
-                <form action="" method="post">
+                <form action="" method="get">
                   <div class="flex-form">
-                    <div
-                      style="
-                        display: flex;
-                        flex-direction: column;
-                        gap: 1rem;
-                        width: 100%;
-                        max-width: 400px;
-                      "
-                    >
-                      <div class="campo-input">
-                        <label for="valor-diaria">Valor da Diária *</label>
-                        <input
-                          type="number"
-                          id="valor-diaria"
-                          name="valor-diaria"
-                          placeholder="10.00"
-                          min="0.01"
-                          step="0.01"
-                          required
-                        />
-                      </div>
+                    <div class="campo-input">
+                      <label for="valor-diaria">Valor da Diária *</label>
+                      <input
+                        type="number"
+                        id="valor-diaria"
+                        name="valor-diaria"
+                        placeholder="10.00"
+                        min="0.01"
+                        step="0.01"
+                        required
+                      />
+                    </div>
 
-                      <div class="campo-input">
-                        <label for="nome">Vagas disponíveis *</label>
-                        <input
-                          type="number"
-                          id="qtd-vagas"
-                          name="qtd-vagas"
-                          placeholder="3"
-                          min="1"
-                          step="1"
-                          required
-                        />
-                      </div>
+                    <div class="campo-input">
+                      <label for="qtd-vagas">Vagas disponíveis *</label>
+                      <input
+                        type="number"
+                        id="qtd-vagas"
+                        name="qtd-vagas"
+                        placeholder="3"
+                        min="1"
+                        step="1"
+                        required
+                      />
+                    </div>
 
-                      <div
-                        class="form-acoes"
-                        style="
-                          justify-content: space-between;
-                          margin-top: 2rem;
-                          width: 100%;
-                        "
-                      >
-                        <button type="submit" class="btn-principal">
-                          <span>💾</span> Salvar
-                        </button>
-                        <button type="reset" class="btn-secundario">
-                          <span>🔄</span> Limpar
-                        </button>
-                      </div>
+                    <div class="form-acoes">
+                      <button type="submit" class="btn-principal">
+                        <span>💾</span> Salvar
+                      </button>
+                      <button type="reset" class="btn-secundario">
+                        <span>🔄</span> Limpar
+                      </button>
                     </div>
                   </div>
                 </form>
