@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nova Reserva</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="tela logado">
+        <section class="navbar">
+          <h1 class="logo">Hotel Pet</h1>
+          <nav class="nav-menu">
+            <a href="pets.html" class="opcao">
+              <img src="img/pet.svg" alt="Icone Pet" />
+              <span>Pets</span>
+            </a>
+            <a href="usuarios.html" class="opcao">
+              <img src="img/user.svg" alt="Icone Usuario" />
+              <span>Usuários</span>
+            </a>
+            <a href="configuracoes.html" class="opcao">
+              <img src="img/settings.svg" alt="Icone Configurações" />
+              <span>Configurações</span>
+            </a>
+            <a href="reservas.html" class="opcao ativo">
+              <img src="img/book-open.svg" alt="Icone Reservas" />
+              <span>Reservas</span>
+            </a>
+          </nav>
+        </section>
+
+        <section class="principal">
+          <div class="user-header">
+            <div class="user-info">
+              <img src="img/user-circle.svg" alt="Foto do Perfil" />
+              <span>João da Silva</span>
+            </div>
+          </div>
+
+          <div class="conteudo-pagina">
+            <div class="breadcrumb">Home / Reservas / Nova Reserva</div>
+
+            <div class="wrapper-principal">
+              <div class="header-pets">
+                <h1>Fazer Reserva</h1>
+              </div>
+
+              <div class="wrapper-form">
+                <form action="" method="post">
+                  <div class="campo-input">
+                    <label for="pet">Pet *</label>
+                    <input type="text" id="pet" name="pet" required />
+                  </div>
+
+                  <div class="campo-input">
+                    <label>Período*</label>
+                    <div class="datas-periodo">
+                      <input type="date" name="data_inicio" id="tot_inicio" />
+                      <input type="date" name="data_fim" id="tot_fim" />
+                    </div>
+                  </div>
+
+                  <div class="campo-input">
+                    <label for="raca">Notas</label>
+                    <textarea name="notas" id="notas" rows="7"></textarea>
+                  </div>
+
+                  <div class="total-diarias">
+                    Total das diárias: <span class="valor-total">R$ 40,00</span>
+                  </div>
+
+                  <div
+                    class="form-acoes"
+                    style="
+                      justify-content: space-between;
+                      margin-top: 2rem;
+                      width: 100%;
+                    "
+                  >
+                    <button type="submit" class="btn-principal">
+                      <span>💾</span> Salvar
+                    </button>
+                    <button type="reset" class="btn-secundario">
+                      <span>🔄</span> Limpar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

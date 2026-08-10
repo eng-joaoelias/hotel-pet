@@ -361,7 +361,7 @@ a:focus {
     color: #555;
 }
 
-.wrapper-form .campo-input input, select {
+.wrapper-form .campo-input input, .wrapper-form .campo-input select, .wrapper-form .campo-input textarea {
     width: 100%;
     padding: 0.5rem 0.75rem;
     background-color: #fff;
@@ -492,5 +492,18 @@ a:focus {
 .datas-periodo {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.total-diarias {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.total-diarias .valor-total {
+  color: #074ee8;
+  font-weight: 600;
+  margin-left: 0.3rem;
 }
