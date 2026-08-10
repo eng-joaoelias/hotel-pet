@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Nova Reserva</title>
+    <title>Editar Reserva</title>
   </head>
   <body>
     <div class="main">
@@ -40,15 +40,24 @@
           </div>
 
           <div class="conteudo-pagina">
-            <div class="breadcrumb">Home / Reservas / Nova Reserva</div>
+            <div class="breadcrumb">Home / Reservas / Editar Reserva</div>
 
             <div class="wrapper-principal">
               <div class="header-pets">
-                <h1>Fazer Reserva</h1>
+                <h1>Editar Reserva</h1>
               </div>
 
               <div class="wrapper-form">
                 <form action="" method="get">
+                  <div class="campo-input">
+                    <label for="proprietario">Proprietário *</label>
+                    <input
+                      type="text"
+                      id="proprietario"
+                      name="proprietario"
+                      required
+                    />
+                  </div>
                   <div class="campo-input">
                     <label for="pet">Pet *</label>
                     <input type="text" id="pet" name="pet" required />
@@ -64,6 +73,21 @@
 
                   <div class="campo-input">
                     <label for="raca">Notas</label>
+                    <textarea name="notas" id="notas" rows="7"></textarea>
+                  </div>
+
+                  <div class="campo-input">
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                      <option value="" disabled selected></option>
+                      <option value="ativo">Reservada</option>
+                      <option value="inativo">Em progresso</option>
+                      <option value="inativo">Finalizada</option>
+                    </select>
+                  </div>
+
+                  <div class="campo-input">
+                    <label for="raca">Anotações do funcionário</label>
                     <textarea name="notas" id="notas" rows="7"></textarea>
                   </div>
 
