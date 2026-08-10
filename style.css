@@ -488,3 +488,9 @@ a:focus {
     align-items: center;
     width: 100%;
 }
+
+.datas-periodo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
